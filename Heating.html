@@ -1,0 +1,23 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<h1>Heating</h1>
+<body>
+    <input type="number" id="mytemp" value="17">
+    <button onclick="changeTempUp()">^</button>
+    <button onclick="changeTempDown()">v</button>
+
+    <script>
+
+        function changeTempUp() {
+            document.getElementById("mytemp").stepUp();
+        }
+        function changeTempDown() {
+            document.getElementById("mytemp").stepUp(-1);
+        }
+
+    </script>
+</body>
+</html>

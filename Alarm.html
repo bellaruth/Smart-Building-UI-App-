@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<style>
+    .dot {
+        height: 200px;
+        width: 200px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .click {
+        background-color: #0096FF;
+    }
+</style>
+
+<script>
+    const dot = document.querySelector('.dot');
+    dot.addEventListener('click', () => {
+    dot.style.backgroundColor = '#ffac09';
+    })
+</script>
+
+<body>
+
+
+    <button class="dot">OFF</button>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
