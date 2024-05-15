@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    
 </head>
 
 <style>
@@ -13,27 +14,22 @@
         background-color: #bbb;
         border-radius: 50%;
         display: inline-block;
+        border-radius: 8px;
     }
 
-    .click {
-        background-color: #0096FF;
-    }
 </style>
-
-<script>
-    const dot = document.querySelector('.dot');
-    dot.addEventListener('click', () => {
-    dot.style.backgroundColor = '#ffac09';
-    })
-</script>
 
 <body>
 
-
-    <button class="dot">OFF</button>
-    <script src="script.js"></script>
-
-
+    <button class="dot" id="dot" onclick="colorFn()">OFF</button>
+   
+    <script>
+        function colorFn() {
+            document.getElementById("dot")
+        }
+    </script>
 
 </body>
+
+
 </html>
