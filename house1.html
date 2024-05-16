@@ -52,21 +52,25 @@
         margin-left: 50px;
     }
     .button {
-        border: none;
+        border: 3px solid black;
         color: white;
         padding: 15px 32px;
-        text-align: center;
+        text-align: bottom;
         text-decoration: none;
         display: inline-block;
         font-size: 30px;
         margin: 70px 70px;
         cursor: pointer;
+        border-radius: 5px;
     }
     .light {
-        background-color: #008CBA;
+        background-color: #000;
+        border-color: #FFA500;
+        color: #FFA500;
     }
     .light:hover {
-        background-color: #808080;
+        background-color: #FFA500;
+        color: white;
     }
     .heat {
        background-color: #FFA500;
@@ -83,7 +87,7 @@
 </style>
 
 
-<body>
+<body style="background-color: #000;">
 
     <script>
         function openNav() {
@@ -93,8 +97,11 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
+    
     <a href="Light.html">
-    <button class="button light">Light</button> 
+    <button class="button light"><img src="light logo.jpg" alt="light" style="width:200px;height:350px;">
+        
+        Light</button> 
     </a>
      <a href="Heating.html">
     <button class="button heat">Heat</button> 
