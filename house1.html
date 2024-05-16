@@ -15,7 +15,7 @@
 
 </div>
 <span onclick="openNav()">≡</span>
-<h1>House 1<h1>
+<h1 style="color:white;">House 1<h1>
 
 <style>
 
@@ -61,7 +61,7 @@
         font-size: 30px;
         margin: 70px 70px;
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: 10px;
     }
     .light {
         background-color: #000;
@@ -73,16 +73,22 @@
         color: white;
     }
     .heat {
-       background-color: #FFA500;
+       background-color: #000;
+        border-color: #FFA500;
+        color: #FFA500;
     }
     .heat:hover {
-        background-color: #808080;
+        background-color: #FFA500;
+        color: white;
     }
     .alarm {
-       background-color: #FF0000;
+       background-color: #000;
+        border-color: #FFA500;
+        color: #FFA500;
     }
     .alarm:hover {
-        background-color: #808080;
+        background-color: #FFA500;
+        color: white;
     }
 </style>
 
@@ -99,15 +105,18 @@
     </script>
     
     <a href="Light.html">
-    <button class="button light"><img src="light logo.jpg" alt="light" style="width:200px;height:350px;">
+        <button class="button light"><img src="light logo.png" alt="light" style="width:100px;height:120px;">
         
-        Light</button> 
+        <br> Light</button> 
     </a>
-     <a href="Heating.html">
-    <button class="button heat">Heat</button> 
+     
+    <a href="Heating.html">
+    <button class="button heat"><img src="fire.png" alt="fire" style="width:100px;height:120px;"> <br>
+         Heat</button> 
     </a>
+    <br>
     <a href="Alarm.html">
-         <button class="button alarm">Alarm</button> 
+         <button class="button alarm"><img src="alarm.png" alt="alarm" style="width:100px;height:120px;"> <br>Alarm</button> 
     </a>
 <body>
 </html>
