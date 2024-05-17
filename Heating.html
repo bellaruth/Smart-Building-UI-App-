@@ -3,41 +3,59 @@
     <meta charset="utf-8" />
     <title></title>
 </head>
-<h1 style="color:white;">Heating</h1>
+
 <br>
 <body style="background-color: #000;">
 
-
-    <input type="number" id="mytemp" value="17">
-    <button onclick="changeTempUp()">^</button>
-    <button onclick="changeTempDown()">v</button>
-
-    <div class="tempGauge">
-        <div class="needle" style="--score:20">
-            <span class="score">
-            </span>
+    
+    <div class="container">
+        <div class="top"><h1 style="color:white;">Heating</h1></div>
+        <div class="bottom">
+            <input type="number" id="mytemp" value="17"  style="background-color: #000; color: #FFA500;">
+            <button onclick="changeTempUp()" style="background-color: #000; border-color: #FFA500; color: #FFA500;">^</button>
+            <button onclick="changeTempDown()"  style="background-color: #000; border-color: #FFA500; color: #FFA500;">v</button>
         </div>
+        <div class="center">
+            <div class="tempGauge">
+                <div class="needle" id="demo2">
+                    <span class="score">
+                    </span>
+                </div>
 
+            </div>
+        </div>
     </div>
 
 
-    <script>
+            <script>
+
+                let position = 0;
+
+                function changeTempUp() {
+
+                    value = document.getElementById("mytemp").stepUp();
+                    position++;
+                    position++;
+                    position++;
+                    position++;
+                    position++;
+                    document.getElementById("demo2").style.transform = "rotate(" + position + "deg)";
 
 
 
-        function changeTempUp() {
 
-            value = document.getElementById("mytemp").stepUp();
-            return value
+                }
+                function changeTempDown() {
+                    document.getElementById("mytemp").stepUp(-1);
+                    position--;
+                    position--;
+                    position--;
+                    position--;
+                    position--;
+                    document.getElementById("demo2").style.transform = "rotate(" + position + "deg)";
+                }
 
-
-
-        }
-        function changeTempDown() {
-            document.getElementById("mytemp").stepUp(-1);
-        }
-
-    </script>
+            </script>
 </body>
 
 <style>
@@ -49,6 +67,36 @@
         --c3: #ffd800;
         --c4: #ff6a00;
         --c5: #ff0000;
+    }
+    .container {
+        height: 600px;
+        position: relative;
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .top {
+        margin: 0;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        -ms-transform: translate(-90%, 90%);
+        transform: translate(-300%, -150%);
+    }
+    .bottom {
+        margin: 0;
+        position: absolute;
+        top: 5%;
+        left: 20%;
+        -ms-transform: translate(-10%, 90%);
+        transform: translate(-70%, 750%);
+        z-index: 1;
     }
 
     body {
