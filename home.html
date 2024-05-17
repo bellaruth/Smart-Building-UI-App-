@@ -13,7 +13,7 @@
     <a href="home.html">Home</a>
     <a href="house1.html">House 1</a>
     <a href="house2.html">House 2</a>
-    <a href="#">House 3</a>
+    <a href="house3.html">House 3</a>
 
 
 
@@ -56,40 +56,31 @@
         margin-left: 50px;
     }
 
+    
     .addhouse {
-        border: none;
+        border: 3px solid black;
         color: white;
         padding: 15px 32px;
-        text-align: center;
+        text-align: bottom;
         text-decoration: none;
         display: inline-block;
         font-size: 30px;
         margin: 70px 70px;
         cursor: pointer;
+        border-radius: 10px;
+        background-color: #000;
+        border-color: #FFA500;
+        color: #FFA500;
     }
 
-    .addhouse {
-        background-color: #04AA6D;
-    }
-    
-    .button2 {
-        background-color: #008CBA;
-    }
     .addhouse:hover {
-        background-color: #808080;
+        background-color: #FFA500;
+        color: white;
     }
-    .button2:hover {
-        background-color: #808080;
-    }
-    .house {
-        background-color: white;
-    }
-    
-    
     
 </style>
     
-<body style="background-color: #000;">
+
 
     <script>
         function openNav() {
@@ -99,9 +90,15 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
+    <body style="background-color: #000;">
+        <a href="house4.html">
+            <button class="addhouse">
+                <img src="house.png" alt="house" style="width:100px;height:120px;">
 
+                <br> Add +
+            </button>
+        </a>
 
-    <button class="addhouse">+ House</button>
-    <button class="button button2">Blue</button>
-</body>
+        
+    </body>
 </html>
