@@ -9,26 +9,42 @@
 
 <style>
     .button {
-        height: 200px;
-        width: 200px;
-        background-color: #0000FF;
+        height: 500px;
+        width: 500px;
+        background-color: #FFA500;
         border-radius: 50%;
         display: inline-block;
-        border-radius: 100px;
+        border-radius: 1000px;
+    }
+    .container {
+        height: 600px;
+        position: relative;
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 </style>
 
 <body style="background-color: #000;">
 
     <h1 style="color:white;"> Alarm System</h1>
+    <div class="container">
+        <div class="center">
 
+            <a href="Alarm.html">
+                <button class="button light" style="font-size:30vw">ON</button>
+            </a>
 
-    <a href="Alarm.html">
-        <button class="button light">ON</button>
-    </a>
+        </div>
+    </div>
 
-
-</bodystyle="background-color:>
+            
 
 
 </html>

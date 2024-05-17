@@ -5,24 +5,21 @@
     <meta charset="utf-8" />
     <title></title>
 </head>
-
-
-
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="home.html">Home</a>
     <a href="house1.html">House 1</a>
     <a href="house2.html">House 2</a>
-    <a href="#">House 3</a>
+    <a href="house3.html">House 3</a>
 
 
 
 </div>
 <span onclick="openNav()" style="color:white;">≡</span>
-<h1 style="color:white;">Home</h1>
+<h1 style="color:white;">House 1<h1>
 
 <style>
-    
+
     .sidenav {
         height: 100%; 
         width: 0;
@@ -32,7 +29,7 @@
         left: 0;
         background-color: #111; 
         overflow-x: hidden; 
-        padding-top: 0px; 
+        padding-top: 60px; 
         
         transition: 0.5s; 
     }
@@ -55,40 +52,48 @@
         font-size: 36px;
         margin-left: 50px;
     }
-
-    .addhouse {
-        border: none;
+    .button {
+        border: 3px solid black;
         color: white;
         padding: 15px 32px;
-        text-align: center;
+        text-align: bottom;
         text-decoration: none;
         display: inline-block;
         font-size: 30px;
         margin: 70px 70px;
         cursor: pointer;
+        border-radius: 10px;
     }
-
-    .addhouse {
-        background-color: #04AA6D;
+    .light {
+        background-color: #000;
+        border-color: #FFA500;
+        color: #FFA500;
     }
-    
-    .button2 {
-        background-color: #008CBA;
+    .light:hover {
+        background-color: #FFA500;
+        color: white;
     }
-    .addhouse:hover {
-        background-color: #808080;
+    .heat {
+       background-color: #000;
+        border-color: #FFA500;
+        color: #FFA500;
     }
-    .button2:hover {
-        background-color: #808080;
+    .heat:hover {
+        background-color: #FFA500;
+        color: white;
     }
-    .house {
-        background-color: white;
+    .alarm {
+       background-color: #000;
+        border-color: #FFA500;
+        color: #FFA500;
     }
-    
-    
-    
+    .alarm:hover {
+        background-color: #FFA500;
+        color: white;
+    }
 </style>
-    
+
+
 <body style="background-color: #000;">
 
     <script>
@@ -99,9 +104,20 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
-
-
-    <button class="addhouse">+ House</button>
-    <button class="button button2">Blue</button>
-</body>
+    
+    <a href="Light.html">
+        <button class="button light"><img src="light logo.png" alt="light" style="width:100px;height:120px;">
+        
+        <br> Light</button> 
+    </a>
+     
+    <a href="Heating.html">
+    <button class="button heat"><img src="fire.png" alt="fire" style="width:100px;height:120px;"> <br>
+         Heat</button> 
+    </a>
+    <br>
+    <a href="Alarm.html">
+         <button class="button alarm"><img src="alarm.png" alt="alarm" style="width:100px;height:120px;"> <br>Alarm</button> 
+    </a>
+<body>
 </html>
